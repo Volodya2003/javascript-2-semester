@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<script type="text/javascript">
+
+class Item {
+constructor(name, image, price) {
+this.name = name;
+this.image = image;
+this.price = price;
+}
+}
+
+class Armor extends Item {
+constructor(name, image, price, protect) {
+super(name, image, price);
+this.protect = protect;
+}
+
+getInfo() {
+console.log(`Название: ${this.name}, Цена: ${this.price}, Защита: ${this.protect}`);
+}
+}
+
+let armor = new Armor('arm','armjpg',400,'power')
+armor.getInfo();
+
+</script>
+/|\
+</body>
+</html>
